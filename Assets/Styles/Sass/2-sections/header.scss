@@ -1,0 +1,100 @@
+.header {
+  width: 100%;
+  .navbar {
+    position: absolute;
+    z-index: 1;
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.75);
+    background-color: #19CF86;
+    width: 100%;
+    height: 105px;
+    display: flex;
+    .logo {
+      width: 50%;
+      list-style: none;
+      padding: 0;
+      img {
+        width: 400px;
+        height: 100px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .menu {
+      list-style: none;
+      width: 50%;
+      .menu-icon {
+        padding: 5px;
+        border: 1px solid black;
+        width: 50px;
+        height: 50px;
+        float:right;
+        margin-top: 25px;
+        margin-right: 100px;
+        border-radius: 4px;
+        &:hover {
+          transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+          background-color: white;
+          transform: scale(1.05);
+          cursor: pointer;
+        }
+        img {
+          float:right;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+  .jumbotron {
+    padding-top: 105px;
+    height: 550px;
+    width: 100%;
+    background-image: url("http://www.pardot.com/wp-content/uploads/2015/03/iStock-Unfinished-Business-5.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    .opacity-overlay {
+      width: inherit;
+      height: inherit;
+      background-color: rgba(0, 59, 148,0.5);
+      .title {
+        padding-left: 37%;
+        display:flex;
+        padding-top:50px;
+        color:white;
+        font-size:64px;
+        margin: 0 auto;
+        .updating-title {
+          margin-top: -7px;
+          margin-left:25px;
+          text-align: center;
+          display: inline-block;
+          border: 5px solid rgb(6, 230, 252);
+          padding: 5px 10px;
+        }
+      }
+
+      .kicker {
+        display: block;
+        margin: 100px auto 25px;
+        line-height: 2.0;
+        font-size: 18px;
+        font-weight: 100;
+        color:white;
+        text-align: center;
+        width: 50%;
+        height: auto;
+      }
+      .mission {
+        font-style: oblique;
+        color:white;
+        text-align: center;
+        font-size: 24px;
+      }
+    }
+  }
+}

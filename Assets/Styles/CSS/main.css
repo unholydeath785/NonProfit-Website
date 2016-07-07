@@ -1,0 +1,415 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif; }
+
+.animation-target-scale-up {
+  -webkit-animation: animation-scale-up 1000ms linear both;
+  animation: animation-scale-up 1000ms linear both; }
+
+/* Generated with Bounce.js. Edit at http://goo.gl/UyKLXj */
+@-webkit-keyframes animation-scale-up {
+  0% {
+    -webkit-transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.3% {
+    -webkit-transform: matrix3d(0.86, 0, 0, 0, 0, 0.86, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.86, 0, 0, 0, 0, 0.86, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  8.61% {
+    -webkit-transform: matrix3d(1.115, 0, 0, 0, 0, 1.115, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.115, 0, 0, 0, 0, 1.115, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.91% {
+    -webkit-transform: matrix3d(1.237, 0, 0, 0, 0, 1.237, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.237, 0, 0, 0, 0, 1.237, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.22% {
+    -webkit-transform: matrix3d(1.265, 0, 0, 0, 0, 1.265, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.265, 0, 0, 0, 0, 1.265, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  28.33% {
+    -webkit-transform: matrix3d(1.214, 0, 0, 0, 0, 1.214, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.214, 0, 0, 0, 0, 1.214, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  39.44% {
+    -webkit-transform: matrix3d(1.196, 0, 0, 0, 0, 1.196, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.196, 0, 0, 0, 0, 1.196, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  61.66% {
+    -webkit-transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  83.98% {
+    -webkit-transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% {
+    -webkit-transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
+@keyframes animation-scale-up {
+  0% {
+    -webkit-transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.3% {
+    -webkit-transform: matrix3d(0.86, 0, 0, 0, 0, 0.86, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.86, 0, 0, 0, 0, 0.86, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  8.61% {
+    -webkit-transform: matrix3d(1.115, 0, 0, 0, 0, 1.115, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.115, 0, 0, 0, 0, 1.115, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.91% {
+    -webkit-transform: matrix3d(1.237, 0, 0, 0, 0, 1.237, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.237, 0, 0, 0, 0, 1.237, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.22% {
+    -webkit-transform: matrix3d(1.265, 0, 0, 0, 0, 1.265, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.265, 0, 0, 0, 0, 1.265, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  28.33% {
+    -webkit-transform: matrix3d(1.214, 0, 0, 0, 0, 1.214, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.214, 0, 0, 0, 0, 1.214, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  39.44% {
+    -webkit-transform: matrix3d(1.196, 0, 0, 0, 0, 1.196, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.196, 0, 0, 0, 0, 1.196, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  61.66% {
+    -webkit-transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  83.98% {
+    -webkit-transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% {
+    -webkit-transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
+.animation-target-scale-down {
+  -webkit-animation: animation-scale-down 1000ms linear both;
+  animation: animation-scale-down 1000ms linear both; }
+
+/* Generated with Bounce.js. Edit at http://goo.gl/FWGSeV */
+@-webkit-keyframes animation-scale-down {
+  0% {
+    -webkit-transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.3% {
+    -webkit-transform: matrix3d(0.84, 0, 0, 0, 0, 0.84, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.84, 0, 0, 0, 0, 0.84, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  8.61% {
+    -webkit-transform: matrix3d(0.585, 0, 0, 0, 0, 0.585, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.585, 0, 0, 0, 0, 0.585, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.91% {
+    -webkit-transform: matrix3d(0.463, 0, 0, 0, 0, 0.463, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.463, 0, 0, 0, 0, 0.463, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.22% {
+    -webkit-transform: matrix3d(0.435, 0, 0, 0, 0, 0.435, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.435, 0, 0, 0, 0, 0.435, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  28.33% {
+    -webkit-transform: matrix3d(0.486, 0, 0, 0, 0, 0.486, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.486, 0, 0, 0, 0, 0.486, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  39.44% {
+    -webkit-transform: matrix3d(0.504, 0, 0, 0, 0, 0.504, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.504, 0, 0, 0, 0, 0.504, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  61.66% {
+    -webkit-transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  83.98% {
+    -webkit-transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% {
+    -webkit-transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
+@keyframes animation-scale-down {
+  0% {
+    -webkit-transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(1.2, 0, 0, 0, 0, 1.2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  4.3% {
+    -webkit-transform: matrix3d(0.84, 0, 0, 0, 0, 0.84, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.84, 0, 0, 0, 0, 0.84, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  8.61% {
+    -webkit-transform: matrix3d(0.585, 0, 0, 0, 0, 0.585, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.585, 0, 0, 0, 0, 0.585, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  12.91% {
+    -webkit-transform: matrix3d(0.463, 0, 0, 0, 0, 0.463, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.463, 0, 0, 0, 0, 0.463, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  17.22% {
+    -webkit-transform: matrix3d(0.435, 0, 0, 0, 0, 0.435, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.435, 0, 0, 0, 0, 0.435, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  28.33% {
+    -webkit-transform: matrix3d(0.486, 0, 0, 0, 0, 0.486, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.486, 0, 0, 0, 0, 0.486, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  39.44% {
+    -webkit-transform: matrix3d(0.504, 0, 0, 0, 0, 0.504, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.504, 0, 0, 0, 0, 0.504, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  61.66% {
+    -webkit-transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  83.98% {
+    -webkit-transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% {
+    -webkit-transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } }
+.header {
+  width: 100%; }
+  .header .navbar {
+    position: absolute;
+    z-index: 1;
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    background-color: #19CF86;
+    width: 100%;
+    height: 105px;
+    display: flex; }
+    .header .navbar .logo {
+      width: 50%;
+      list-style: none;
+      padding: 0; }
+      .header .navbar .logo img {
+        width: 400px;
+        height: 100px; }
+        .header .navbar .logo img:hover {
+          cursor: pointer; }
+    .header .navbar .menu {
+      list-style: none;
+      width: 50%; }
+      .header .navbar .menu .menu-icon {
+        padding: 5px;
+        border: 1px solid black;
+        width: 50px;
+        height: 50px;
+        float: right;
+        margin-top: 25px;
+        margin-right: 100px;
+        border-radius: 4px; }
+        .header .navbar .menu .menu-icon:hover {
+          transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+          background-color: white;
+          transform: scale(1.05);
+          cursor: pointer; }
+        .header .navbar .menu .menu-icon img {
+          float: right;
+          width: 50px;
+          height: 50px; }
+  .header .jumbotron {
+    padding-top: 105px;
+    height: 550px;
+    width: 100%;
+    background-image: url("http://www.pardot.com/wp-content/uploads/2015/03/iStock-Unfinished-Business-5.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; }
+    .header .jumbotron .opacity-overlay {
+      width: inherit;
+      height: inherit;
+      background-color: rgba(0, 59, 148, 0.5); }
+      .header .jumbotron .opacity-overlay .title {
+        padding-left: 37%;
+        display: flex;
+        padding-top: 50px;
+        color: white;
+        font-size: 64px;
+        margin: 0 auto; }
+        .header .jumbotron .opacity-overlay .title .updating-title {
+          margin-top: -7px;
+          margin-left: 25px;
+          text-align: center;
+          display: inline-block;
+          border: 5px solid #06e6fc;
+          padding: 5px 10px; }
+      .header .jumbotron .opacity-overlay .kicker {
+        display: block;
+        margin: 100px auto 25px;
+        line-height: 2.0;
+        font-size: 18px;
+        font-weight: 100;
+        color: white;
+        text-align: center;
+        width: 50%;
+        height: auto; }
+      .header .jumbotron .opacity-overlay .mission {
+        font-style: oblique;
+        color: white;
+        text-align: center;
+        font-size: 24px; }
+
+.about {
+  height: 1100px;
+  width: 100%;
+  background-color: #494949;
+  display: flex; }
+  .about .row {
+    display: flex;
+    flex-direction: column;
+    width: 26.66667%;
+    height: 1000px; }
+    .about .row .twitter-container {
+      background-color: white; }
+    .about .row .amount {
+      margin-top: -5px;
+      width: 100%;
+      padding-top: 2px;
+      height: 600px;
+      background-color: #b8b8b8; }
+      .about .row .amount .percentage {
+        color: yellow;
+        font-size: 72px;
+        margin: 0;
+        padding: 50px 0 0 75px; }
+      .about .row .amount .desc {
+        padding: 10px 0 0 50px;
+        line-height: 2;
+        font-weight: 700;
+        font-size: 24px; }
+    .about .row .total {
+      width: 100%;
+      height: 400px;
+      background-color: #dadada; }
+      .about .row .total .total-donated {
+        color: yellow;
+        font-size: 72px;
+        margin: 0;
+        padding: 50px 0 0 75px; }
+      .about .row .total .desc {
+        padding: 10px 0 0 50px;
+        line-height: 2;
+        font-weight: 700;
+        font-size: 24px; }
+        .about .row .total .desc a {
+          text-decoration: none;
+          color: black;
+          border-bottom: 2px solid #19CF86; }
+          .about .row .total .desc a:hover {
+            transition: color 0.5s ease-in-out;
+            color: #19CF86; }
+    .about .row .event {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 400px;
+      width: 100%;
+      overflow: hidden; }
+      .about .row .event .event-obv {
+        background-color: #787878;
+        padding: 1px 15px 5px;
+        font-size: 24px; }
+      .about .row .event .event-container {
+        overflow: hidden;
+        color: white;
+        width: 100%;
+        margin-top: 308px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.8); }
+      .about .row .event .event-cover .event-title {
+        margin: 0;
+        padding-top: 5px;
+        text-align: center; }
+      .about .row .event .event-cover .event-info {
+        display: none;
+        text-align: center;
+        padding-top: 15px; }
+      .about .row .event .event-cover .event-more {
+        position: absolute;
+        display: none;
+        margin-top: 244px;
+        font-size: 36px;
+        padding: 10px; }
+        .about .row .event .event-cover .event-more:hover {
+          cursor: pointer; }
+    .about .row .big {
+      position: absolute;
+      width: 53.3333333%;
+      height: 700px;
+      background-color: #a7a7a7; }
+      .about .row .big .mission {
+        position: absolute;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 30px;
+        font-size: 48px;
+        text-align: center;
+        color: #1f1f1f; }
+      .about .row .big .fluid-container {
+        width: 100%;
+        display: flex; }
+        .about .row .big .fluid-container .col {
+          display: flex;
+          flex-direction: column;
+          width: 33.3333333333%;
+          margin-top: 100px;
+          height: 600px; }
+          .about .row .big .fluid-container .col .icon-container {
+            width: 45%;
+            border-radius: 10000px;
+            height: 195px;
+            border: 2px solid #24b3d9;
+            margin: 75px auto;
+            background-color: white;
+            padding-top: 30px; }
+            .about .row .big .fluid-container .col .icon-container .icon {
+              height: 130px;
+              width: 90%;
+              display: block;
+              margin: 0 auto; }
+          .about .row .big .fluid-container .col .desc {
+            text-align: center;
+            font-size: 24px;
+            color: white;
+            font-weight: 700; }
+          .about .row .big .fluid-container .col button {
+            width: 50%;
+            height: 75px;
+            border: none;
+            font-size: 18px;
+            font-weight: 300;
+            margin: 50px auto;
+            background-color: #19CF86; }
+            .about .row .big .fluid-container .col button:hover {
+              transition: border 0.25s ease-in-out;
+              cursor: pointer;
+              border-bottom: 5px solid #128a5a; }
+            .about .row .big .fluid-container .col button:focus {
+              outline: none;
+              border: 1px solid black; }
+  .about #row-1 {
+    margin-left: 10%; }
+
+.menu-overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .menu-overlay .menu-container {
+    display: block;
+    position: fixed;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 96%;
+    height: 95%;
+    margin: 2% auto;
+    left: 2%; }
+    .menu-overlay .menu-container .menu-close {
+      z-index: 2;
+      border: 2px solid #19CF86;
+      padding: 0 15px;
+      border-radius: 100px;
+      font-size: 48px;
+      color: #19CF86;
+      margin: 25px;
+      position: absolute;
+      top: 20%;
+      left: 60%; }
+      .menu-overlay .menu-container .menu-close:hover {
+        color: white;
+        cursor: pointer;
+        transition: border 0.25s ease-in-out, color 0.25s ease-in-out;
+        border: 2px solid white; }
+    .menu-overlay .menu-container .menu {
+      margin-top: 15%;
+      padding: 0;
+      list-style: none; }
+      .menu-overlay .menu-container .menu .menu-item {
+        color: #19CF86;
+        font-size: 36px;
+        padding-top: 25px; }
+        .menu-overlay .menu-container .menu .menu-item:hover {
+          transition: transform 0.5s ease-in-out;
+          transform: scale(1.05);
+          color: white; }
+        .menu-overlay .menu-container .menu .menu-item a {
+          color: inherit;
+          text-decoration: none; }
+
+/*# sourceMappingURL=main.css.map */
