@@ -1,12 +1,12 @@
 .about {
-  height: 1100px;
+  height: auto;
   width: 100%;
-  background-color: rgb(73, 73, 73);
   display: flex;
+  background-color: rgb(73, 73, 73);
   .row {
     display: flex;
     flex-direction: column;
-    width: 26.66667%;
+    width: 28%;
     height: 1000px;
     .twitter-container {
       background-color: white;
@@ -15,7 +15,8 @@
       margin-top:-5px;
       width: 100%;
       padding-top: 2px;
-      height:600px;
+      max-height:600px;
+      height: 600px;
       background-color:rgb(184, 184, 184);
       .percentage {
         color:yellow;
@@ -25,7 +26,7 @@
       }
       .desc {
         padding: 10px 0 0 50px;
-        line-height: 2;
+        line-height: 1.5;
         font-weight: 700;
         font-size: 24px;
       }
@@ -57,12 +58,11 @@
       }
     }
     .event {
-      // background-image:url("http://www.gamereactor.de/media/76/yournewwallpaper_1487614b.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       height: 400px;
-      width:100%;
+      width:90.5%;
       overflow: hidden;
       .event-obv {
         background-color:rgb(120, 120, 120);
@@ -103,8 +103,11 @@
     .big {
       position: absolute;
       width: 53.3333333%;
-      height: 700px;
+      height: 710px;
       background-color: rgb(167, 167, 167);
+      #col-2 {
+        background-color: rgb(196, 196, 196);
+      }
       .mission {
         position: absolute;
         display: block;
@@ -128,9 +131,9 @@
             width:45%;
             border-radius: 10000px;
             height:195px;
-            border: 2px solid rgb(36, 179, 217);
+            border: 1px solid black;
             margin: 75px auto;
-            background-color: white;
+            background-color: rgb(37, 36, 36);
             padding-top: 30px;
             .icon {
               height: 130px;
@@ -168,6 +171,6 @@
     }
   }
   #row-1 {
-    margin-left:10%;
+    margin-left:8%;
   }
 }

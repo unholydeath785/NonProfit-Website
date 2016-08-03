@@ -16,9 +16,10 @@
 
   <!-- TODO:  -->
   <!-- Center Changing Title -->
+  <!-- fix icon size -->
 
     <!-- Header -->
-    <section class="header" id="#home">
+    <section class="header" id="home">
       <nav class="navbar">
         <li class="logo"><a href="#"><img src="Assets/Images/logo.png" alt=""></a></li>
         <li class="menu"><span class="menu-icon"><img src="Assets/Images/menu.svg" alt="Hamburger menu" /></span></li>
@@ -40,7 +41,7 @@
         </div>
         <div class="amount" id="col-2">
           <h1 class="percentage">100%</h1>
-          <p class="desc">of every 1$ goes towards funding future projects and improving our local nonprofit community</p>
+          <p class="desc">of every 1$ goes towards funding projects and our nonprofit community</p>
         </div>
       </div>
       <div class="row" id="row-2">
@@ -56,21 +57,21 @@
                 <img src="Assets/Images/browser.svg" alt="Meme" class="icon">
               </div>
               <p class="desc">More Web Presence</p>
-              <button id="web" type="button" name="button">How?</button>
+              <button id="btn-1" type="button" class="how" data-title="Web Presence" name="button">How?</button>
             </div>
             <div class="col" id="col-2">
               <div class="icon-container">
                 <img src="Assets/Images/girl.svg" alt="Meme" class="icon">
               </div>
               <p class="desc">More Influence</p>
-              <button id="volunteering" type="button" name="button">How?</button>
+              <button id="btn-2" class="how" data-title="Volunteers" type="button" name="button">How?</button>
             </div>
             <div class="col" id="col-3">
               <div class="icon-container">
                 <img src="Assets/Images/idea.svg" alt="Meme" class="icon">
               </div>
               <p class="desc">More Ideas</p>
-              <button id="ideas" type="button" name="button">How?</button>
+              <button id="btn-3" data-title="Ideas" class="how" type="button" name="button">How?</button>
             </div>
           </div>
         </div>
@@ -89,6 +90,80 @@
       </div>
     </section>
 
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h1 class="project-title">Projects</h1>
+      <div class="projects-carousel">
+        <div class="slide" id="slide-1">
+          <h1 class="slide-title">Find-A-Profit</h1>
+          <p class="project-desc">The idea of this project is to create a one stop place to discover new non-profits that help in ways that you are interested in. The database also contains reviews and an overall rating of a nonprofit, as well as our personal reccomendations.</p>
+        </div>
+        <div class="slide" id="slide-2">
+          <h1 class="slide-title">myHub</h1>
+          <p class="project-desc">myHub is a new way to manage your sites. This enables owners of websites to control their pages and content and not need the help of a web egineer. This saves time and possible money for a nonprofit. The usage of myHub becomes extremley powerful if your nonprofit has a web team due to the html, css, and js customization in myHub.</p>
+        </div>
+        <div class="slide" id="slide-3">
+          <h1 class="slide-title">First Site</h1>
+          <p class="project-desc">Coming Soon!</p>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <div onclick="app.getSlider().prevSlide(); app.resetCarousel();" class="prev-container">
+          <a class="prev"><</a>
+        </div>
+        <div onclick="app.getSlider().nextSlide(); app.resetCarousel();" class="next-container">
+          <a class="next">></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <!-- Facebook -->
+      <!-- Snapchat -->
+      <!-- Twitter -->
+      <!-- Insta -->
+      <!-- Google -->
+      <!-- Form Email -->
+      <div class="contact-info">
+        <h3 class="contact-title">Legal</h1>
+        <span class="copyright">Copyright (c) 2016 Kappa Designs All Rights Reserved.</span>
+        <br>
+        <span class="legal">Copyright (c) 2016 Kappa Designs All Rights Reserved.</span>
+        <h4 class="nav-title">Nav</h4>
+        <ul class="nav">
+          <li class="option" id="option-1"><a href="#home">Home</a></li>
+          <li class="option" id="option-2"><a href="#about">About</a></li>
+          <li class="option" id="option-3"><a href="#projects">Projects</a></li>
+          <li class="option" id="option-4"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="media-container">
+
+        <ul class="media-list">
+          <li class="media"><a href="https://www.facebook.com/"><img src="Assets/Images/facebook.svg" alt="" class="media-icon"></a></li>
+          <li class="media"><a href="http://www.twitter.com"><img src="Assets/Images/twitter.svg" alt="" class="media-icon"></a></li>
+          <li class="media"><a href="http://www.snapchat.com"><img src="Assets/Images/snapchat.svg" alt="" class="media-icon"></a></li>
+          <li class="media"><a href="http://www.instagram.com"><img src="Assets/Images/instagram.svg" alt="" class="media-icon"></a></li>
+          <li class="media"><a href="http://www.plus.google.com"><img src="Assets/Images/google-plus.svg" alt="" class="media-icon"></a></li>
+        </ul>
+        <form action="javascript:sendMail()" method="post" enctype="text/plain" class="email">
+          <div class="email-container">
+            <div class="email-header">
+              <h3>Send Us An Email!</h3>
+              <input type="text" name="name" placeholder="Email..." class="from">
+              <input type="text" name="subject" placeholder="Subject..." class="subject">
+              <input type="text" name="mailcc" placeholder="CC..." class="cc">
+            </div>
+            <div class="email-body">
+              <textarea placeholder="Body of email..." name="mailbody" id="emailbod" class="body"></textarea>
+            </div>
+          </div>
+          <button type="submit" name="button">Submit</button>
+        </form>
+      </div>
+    </section>
+
     <!-- Menu Module -->
     <div class="menu-overlay">
       <div class="menu-container animation-target-scale-down">
@@ -96,10 +171,23 @@
         <ul class="menu">
           <li class="menu-item" id="menu-1"><a href="#home">Home</a></li>
           <li class="menu-item" id="menu-2"><a href="#about">About</a></li>
-          <li class="menu-item" id="menu-3"><a href="#mission">Mission</a></li>
-          <li class="menu-item" id="menu-4"><a href="#projects">Projects</a></li>
-          <li class="menu-item" id="menu-5"><a href="#team">Team</a></li>
+          <li class="menu-item" id="menu-3"><a href="#projects">Projects</a></li>
+          <li class="menu-item" id="menu-4"><a href="#contact">Contact</a></li>
         </ul>
+      </div>
+    </div>
+
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h1 class="modal-title">Title</h1>
+        </div>
+        <div class="modal-body">
+          <p class="modal-desc">desc</p>
+        </div>
+        <div class="modal-footer">
+          <button class="modal-close">Close</button>
+        </div>
       </div>
     </div>
 
