@@ -20,10 +20,7 @@
 
     <!-- Header -->
     <section class="header" id="home">
-      <nav class="navbar">
-        <li class="logo"><a href="#"><img src="Assets/Images/logo.png" alt=""></a></li>
-        <li class="menu"><span class="menu-icon"><img src="Assets/Images/menu.svg" alt="Hamburger menu" /></span></li>
-      </nav>
+      <li class="menu"><span class="menu-icon"><img src="Assets/Images/menu.svg" alt="Hamburger menu" /></span></li>
       <div class="jumbotron">
         <div class="opacity-overlay">
           <h1 class="title"><span class="title-text">Design</span><span class="updating-title">Community</span></h1>
@@ -35,64 +32,46 @@
 
     <!-- About -->
     <section class="about" id="about">
-      <div class="row" id="row-1">
-        <div class="twitter-container" id="col-1 twitter">
-          <a class="twitter-timeline" data-link-color="#19CF86" data-height="800" href="https://twitter.com/gatesfoundation">Tweets by gatesfoundation</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-        <div class="amount" id="col-2">
-          <h1 class="percentage">100%</h1>
-          <p class="desc">of every 1$ goes towards funding projects and our nonprofit community</p>
-        </div>
-      </div>
-      <div class="row" id="row-2">
-        <div class="total" id="col-1">
-          <h1 class="total-donated">0$</h1>
-          <p class="desc">Dollars donated towards nonprofits and projects that our group hopes to act upon. <a href="#donate">Click here to donate!</a></p>
-        </div>
-        <div class="about big" id="col-2">
-          <h1 class="mission">We Believe in Local Nonprofits</h1>
-          <div class="fluid-container">
-            <div class="col" id="col-1">
-              <div class="icon-container">
-                <img src="Assets/Images/browser.svg" alt="Meme" class="icon">
-              </div>
-              <p class="desc">More Web Presence</p>
-              <button id="btn-1" type="button" class="how" data-title="Web Presence" name="button">How?</button>
+      <div class="grid-container">
+          <div class="row">
+            <div id="total-donated" class="col-2">
+              <h1>Total Donations</h1>
+              <p class="donation-text">
+                So Far Total Donations Recived is <span class="total-donated">0$</span>
+              </p>
             </div>
-            <div class="col" id="col-2">
-              <div class="icon-container">
-                <img src="Assets/Images/girl.svg" alt="Meme" class="icon">
+            <div id="events" class="col-2">
+              <!-- <h1>Events</h1> -->
+              <div class="event-container">
+                <div class="event-cover">
+                  <h1>Event<span class="expand">+</span></h1>
+                  <p>DANk</p>
+                </div>
               </div>
-              <p class="desc">More Influence</p>
-              <button id="btn-2" class="how" data-title="Volunteers" type="button" name="button">How?</button>
             </div>
-            <div class="col" id="col-3">
-              <div class="icon-container">
-                <img src="Assets/Images/idea.svg" alt="Meme" class="icon">
-              </div>
-              <p class="desc">More Ideas</p>
-              <button id="btn-3" data-title="Ideas" class="how" type="button" name="button">How?</button>
+            <div class="col-2"><p>3</p></div>
+          </div>
+          <div class="row">
+            <div id="twitter-timeline" class="col-2">
+              <p>
+                <a class="twitter-timeline" data-height="500" data-link-color="#19CF86" href="https://twitter.com/TwitterDev">Tweets by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </p>
+            </div>
+            <div class="col-4">
+              <p>2</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row" id="row-3">
-        <div class="event" id="col-1">
-          <span class="event-obv">Event</span>
-          <div class="event-container">
-            <div class="event-cover">
-              <h1 class="event-title">None</h1>
-              <p class="event-info">Coming Soon!</p>
-              <span class="event-more">+</span>
-            </div>
-          </div>
-        </div>
+          <!-- <div class="row">
+            <div class="col-2"><p>1</p></div>
+            <div class="col-2"><p>2</p></div>
+            <div class="col-2"><p>3</p></div>
+          </div> -->
       </div>
     </section>
 
     <!-- Projects -->
     <section class="projects" id="projects">
-      <h1 class="project-title">Projects</h1>
+      <!-- <h1 class="project-title">Projects</h1> -->
       <div class="projects-carousel">
         <div class="slide" id="slide-1">
           <h1 class="slide-title">Find-A-Profit</h1>

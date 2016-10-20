@@ -48,15 +48,16 @@
 			border-top: none;
 			.modal-close {
 				background-color: rgb(221, 39, 39);
-				border:none;
+				border: none;
+				border-bottom: 5px solid rgb(157, 53, 53);
 				padding: 4px 10px;
 				float:right;
 				font-size: 18px;
 				margin: 12px 25px;
 				border-radius: 5px;
 				&:hover {
-					transition: border-bottom 0.25s ease-in-out;
-					border-bottom: 5px solid rgb(157, 53, 53);
+					transition: border-bottom 0.25s ease-in;
+					border-bottom: 0px solid rgb(157, 53,53);
 					cursor: pointer;
 				}
 				&:focus {

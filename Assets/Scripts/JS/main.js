@@ -48,41 +48,9 @@ var app = (function ($) {
     }, 100);
   })
 
-  $('.project-title').mouseenter(function () {
-    $(this).css({
-      transition: 'color 0.5s ease-in-out',
-      color:'rgb(0, 0, 0)'
-    })
+  $('.event-cover').hover(function () {
+    
   })
-
-  $('.project-title').mouseleave(function () {
-    $(this).css({
-      transition: 'color 0.5s ease-in-out',
-      color:'rgb(255,255,255)'
-    })
-  })
-
-$('.event-container').mouseenter(function () {
-  $(this).find('.event-info').slideDown();
-  $(this).find('.event-more').slideDown(500);
-  $(this).css({
-    'transition':'margin-top 0.5s, height 0.5s',
-    'height':'100%',
-    'margin-top':'-32px'
-  });
-})
-
-$('.event-container').mouseleave(function () {
-  $(this).css({
-    'transition':'margin-top 1s, height 1s',
-    'height':'60px',
-    'margin-top':'308px'
-  });
-  setTimeout(function () {
-    $('.event-info').slideUp(500);
-    $('.event-more').slideUp(500);
-  }, 10);
-})
 
 $('.how').click(function () {
   $('.modal-overlay').slideDown(500);
@@ -144,7 +112,7 @@ $('.modal-close').click(function () {
     setInterval(function () {
       totalDonations = getDonations(totalDonations);
       $('.total-donated').text(totalDonations + "$");
-    }, 1000 * 10 * 60);
+    }, 1000 * 10);
   }
 
   var getDonations = function (totalDonations) {
@@ -171,6 +139,7 @@ $('.modal-close').click(function () {
     updateDonation();
     slider.displaySlide(1);
     startTimer(slider);
+    $('.jumbotron').height($(window).height());
   }
 
   //return

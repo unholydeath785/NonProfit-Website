@@ -1,176 +1,134 @@
 .about {
-  height: auto;
-  width: 100%;
-  display: flex;
-  background-color: rgb(73, 73, 73);
-  .row {
-    display: flex;
-    flex-direction: column;
-    width: 28%;
-    height: 1000px;
-    .twitter-container {
-      background-color: white;
+  .grid-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    .row:before, .row:after {
+      content:"";
+      display: table;
+      clear:both;
     }
-    .amount {
-      margin-top:-5px;
-      width: 100%;
-      padding-top: 2px;
-      max-height:600px;
-      height: 600px;
-      background-color:rgb(184, 184, 184);
-      .percentage {
-        color:yellow;
-        font-size: 72px;
-        margin: 0;
-        padding: 50px 0 0 75px;
-      }
-      .desc {
-        padding: 10px 0 0 50px;
-        line-height: 1.5;
-        font-weight: 700;
-        font-size: 24px;
-      }
-    }
-    .total {
-      width: 100%;
-      height:400px;
-      background-color:rgb(218, 218, 218);
-      .total-donated {
-        color:yellow;
-        font-size: 72px;
-        margin: 0;
-        padding: 50px 0 0 75px;
-      }
-      .desc {
-        padding: 10px 0 0 50px;
-        line-height: 2;
-        font-weight: 700;
-        font-size: 24px;
-        a {
-          text-decoration: none;
-          color:black;
-          border-bottom: 2px solid #19CF86;
-          &:hover {
-            transition: color 0.5s ease-in-out;
-            color: #19CF86;
-          }
-        }
-      }
-    }
-    .event {
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      height: 400px;
-      width:90.5%;
-      overflow: hidden;
-      .event-obv {
-        background-color:rgb(120, 120, 120);
-        padding: 1px 15px 5px;
-        font-size:24px;
-      }
-      .event-container {
-        overflow: hidden;
-        color:white;
-        width:100%;
-        margin-top: 308px;
-        height: 60px;
-        background-color: rgba(0, 0, 0, 0.8);
-      }
-      .event-cover {
-        .event-title {
+    .row {
+      [class*='col-'] {
+        float: left;
+        min-height: 1px;
+        width: 16.66%;
+        background-color: #FFDCDC;
+        p {
+          background-color: #FFC2C2;
+          padding: 0;
           margin: 0;
-          padding-top: 5px;
           text-align: center;
+          color: white;
         }
-        .event-info {
+      }
+      .col-1{
+          width: 16.66%;
+      }
+      .col-2{
+          width: 33.33%;
+      }
+      .col-3{
+          width: 50%;
+      }
+      .col-4{
+          width: 66.664%;
+      }
+      .col-5{
+          width: 83.33%;
+      }
+      .col-6{
+          width: 100%;
+      }
+      @media all and (max-width:800px){
+        .col-1{ width: 33.33%;    }
+        .col-2{ width: 50%;        }
+        .col-3{ width: 83.33%;    }
+        .col-4{ width: 100%;    }
+        .col-5{ width: 100%;    }
+        .col-6{ width: 100%;      }
+
+        .row .col-2:last-of-type{
+            width: 100%;
+        }
+
+        .row .col-5 ~ .col-1{
+            width: 100%;
+        }
+      }
+      @media all and (max-width:650px){
+        .col-1{ width: 50%;     }
+        .col-2{ width: 100%;    }
+        .col-3{ width: 100%;    }
+        .col-4{ width: 100%;    }
+        .col-5{ width: 100%;    }
+        .col-6{ width: 100%;    }
+
+      }
+      @media all and (max-width: 650px) {
+        #twitter-timeline {
           display: none;
+        }
+      }
+
+      #total-donated {
+        height: 350px;
+        background-color: rgb(187, 187, 187);
+        h1 {
+          font-size: 40px;
           text-align: center;
-          padding-top: 15px;
+          text-decoration: underline;
+          color: rgb(255, 238, 1);
         }
-        .event-more {
-          position: absolute;
-          display: none;
-          margin-top: 244px;
+        .donation-text {
+          text-decoration: underline;
+          text-align: left;
+          margin-left: 30px;
+          line-height: 2.0;
           font-size: 36px;
-          padding: 10px;
-          &:hover {
-            cursor: pointer;
+          background-color: inherit;
+          color: black;
+          span {
+            margin-left: 10px;
+            font-weight: 800;
+            display: inline-block;
+            color: rgb(255, 238, 1);
           }
         }
       }
-    }
-    .big {
-      position: absolute;
-      width: 53.3333333%;
-      height: 710px;
-      background-color: rgb(167, 167, 167);
-      #col-2 {
-        background-color: rgb(196, 196, 196);
-      }
-      .mission {
-        position: absolute;
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        margin-top: 30px;
-        font-size: 48px;
-        text-align: center;
-        color: rgb(31, 31, 31);
-      }
-      .fluid-container {
-        width: 100%;
-        display: flex;
-        .col {
-          display: flex;
-          flex-direction: column;
-          width:33.3333333333%;
-          margin-top: 100px;
-          height:600px;
-          .icon-container {
-            width:45%;
-            border-radius: 10000px;
-            height:195px;
-            border: 1px solid black;
-            margin: 75px auto;
-            background-color: rgb(37, 36, 36);
-            padding-top: 30px;
-            .icon {
-              height: 130px;
-              width: 90%;
-              display: block;
-              margin: 0 auto;
+      #events {
+        background-color: rgb(48, 48, 48);
+        background-image: url('https://s-media-cache-ak0.pinimg.com/564x/f1/4e/16/f14e1605521c8b37db3dc7e290bb51a4.jpg');
+        height: 350px;
+        h1 {
+          margin-left: 15px;
+          text-align: center;
+          color: white;
+          .expand {
+            float: right;
+            margin-right: 15px;
+          }
+        }
+        .event-container {
+          .event-cover {
+            margin-top: 275px;
+            padding-top: 2px;
+            height: 75px;
+            background-color: rgba(0, 0, 0, 0.7);
+            p {
+              text-align: left;
+              margin-left: 25px;
+              background-color: rgba(0, 0, 0, 0.0);
             }
-          }
-          .desc {
-            text-align: center;
-            font-size: 24px;
-            color:white;
-            font-weight: 700;
-          }
-          button {
-            width:50%;
-            height:75px;
-            border: none;
-            font-size: 18px;
-            font-weight: 300;
-            margin: 50px auto;
-            background-color: #19CF86;
             &:hover {
-              transition: border 0.25s ease-in-out;
+              transition: margin-top 1s ease-in-out, height 1s ease-in-out;
+              margin-top: 0px;
+              height:350px;
               cursor: pointer;
-              border-bottom: 5px solid #128a5a;
-            }
-            &:focus {
-              outline: none;
-              border: 1px solid black;
             }
           }
         }
       }
     }
-  }
-  #row-1 {
-    margin-left:8%;
   }
 }
