@@ -4,19 +4,17 @@
     list-style: none;
     width: 50%;
     .menu-icon {
+      left:85%;
       position: fixed;
       z-index:420666;
-      left: 90%;
       padding: 5px;
       border: 1px solid black;
       width: 50px;
       height: 50px;
-      float:right;
       -webkit-box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.75);
       -moz-box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.75);
       box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.75);
       margin-top: 25px;
-      margin-right: 100px;
       border-radius: 4px;
       &:hover {
         transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out, color 0.5s ease-in-out;
@@ -25,10 +23,13 @@
         cursor: pointer;
       }
       img {
-        float:right;
         width: 50px;
         height: 50px;
       }
+      @media all and (max-width: 480px) {
+        display: none;
+      }
+      
     }
   }
   .jumbotron {
@@ -43,28 +44,41 @@
       width: inherit;
       height: inherit;
       background-color: rgba(51, 60, 56, 0.5);
-      .title {
-        padding-left: 30%;
-        display:flex;
-        padding-top:50px;
-        color:white;
-        font-size:64px;
+      .title-container {
         margin: 0 auto;
-        .updating-title {
-          margin-top: -7px;
-          margin-left:25px;
-          text-align: center;
-          display: inline-block;
-          border: 5px solid rgb(6, 230, 252);
-          padding: 5px 10px;
+        width: 60%;
+        .title {
+          display:flex;
+          padding-top:50px;
+          color:white;
+          @media all and (max-width: 500px) {
+            font-size: 20px;
+          }
+          @media all and (min-width: 501px) {
+            font-size: 7vw;
+          }
+          margin: 0;
+          .updating-title {
+            margin-top: -7px;
+            margin-left:15px;
+            text-align: center;
+            display: inline-block;
+            border: 5px solid rgb(6, 230, 252);
+            padding: 5px 10px;
+          }
         }
       }
 
       .kicker {
+        @media all and (max-width: 500px) {
+          font-size: 12px;
+        }
+        @media all and (min-width: 501px) {
+          font-size: 1.5vw;
+        }
         display: block;
         margin: 100px auto 25px;
         line-height: 2.0;
-        font-size: 18px;
         font-weight: 100;
         color:white;
         text-align: center;
@@ -72,10 +86,15 @@
         height: auto;
       }
       .mission {
+        @media all and (max-width: 481px) {
+          font-size: 16px;
+        }
+        @media all and (min-width: 482px) {
+          font-size: 2vw;
+        }
         font-style: oblique;
         color:white;
         text-align: center;
-        font-size: 24px;
       }
     }
   }

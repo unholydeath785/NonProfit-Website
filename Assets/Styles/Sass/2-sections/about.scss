@@ -13,9 +13,7 @@
         float: left;
         min-height: 1px;
         width: 16.66%;
-        background-color: #FFDCDC;
         p {
-          background-color: #FFC2C2;
           padding: 0;
           margin: 0;
           text-align: center;
@@ -40,9 +38,9 @@
       .col-6{
           width: 100%;
       }
-      @media all and (max-width:800px){
+      @media all and (max-width:950px){
         .col-1{ width: 33.33%;    }
-        .col-2{ width: 50%;        }
+        .col-2{ width: 33.33%;        }
         .col-3{ width: 83.33%;    }
         .col-4{ width: 100%;    }
         .col-5{ width: 100%;    }
@@ -54,6 +52,9 @@
 
         .row .col-5 ~ .col-1{
             width: 100%;
+        }
+        #twitter-timeline {
+          display: none;
         }
       }
       @media all and (max-width:650px){
@@ -85,7 +86,12 @@
           text-align: left;
           margin-left: 30px;
           line-height: 2.0;
-          font-size: 36px;
+          @media all and (max-width: 650px) {
+            font-size: 28px;
+          }
+          @media all and (min-width: 651px) {
+            font-size: 3vw;
+          }
           background-color: inherit;
           color: black;
           span {
@@ -116,6 +122,7 @@
             height: 75px;
             background-color: rgba(0, 0, 0, 0.7);
             p {
+              display: none;
               text-align: left;
               margin-left: 25px;
               background-color: rgba(0, 0, 0, 0.0);
@@ -125,7 +132,117 @@
               margin-top: 0px;
               height:350px;
               cursor: pointer;
+              p {
+                transition: display 1s ease-in-out;
+                display: inline-block;
+              }
             }
+          }
+        }
+      }
+      #donation-percentage {
+        height: 350px;
+        background-color: rgb(44, 44, 44);
+        h1 {
+          font-size: 40px;
+          text-align: center;
+          text-decoration: underline;
+          color: rgb(255, 238, 1);
+        }
+        p {
+          text-align: left;
+          margin-left: 30px;
+          line-height: 2.0;
+          @media all and (max-width: 650px) {
+            font-size: 28px;
+          }
+          @media all and (min-width: 651px) {
+            font-size: 3vw;
+          }
+          background-color: inherit;
+          color: white;
+          span {
+            margin-left: 10px;
+            font-weight: 800;
+            display: inline-block;
+            color: rgb(255, 238, 1);
+          }
+        }
+      }
+      #how-container {
+        background-color: rgb(120, 120, 120);
+        h1 {
+          font-size: 40px;
+          text-align: center;
+          text-decoration: underline;
+          color: rgb(255, 238, 1);
+        }
+        margin: 0 auto;
+        #how {
+          display: block;
+          margin: 0 auto;
+          height: 500px;
+          .logo-container {
+            z-index: 1;
+            margin: 0 auto;
+            margin-left: 15px;
+            width: 205px;
+            height: 205px;
+            background-color: rgb(66, 62, 71);
+            border-radius: 100%;
+            img {
+              padding-top: 30px;
+              display: block;
+              margin: 0 auto;
+              height: 150px;
+              width: 150px;
+            }
+            &:hover {
+              cursor: pointer;
+              .more-container {
+                transition: margin-left 0.75s ease-in-out, z-index 0.15s ease-in-out;
+                margin-left: 15px;
+                z-index: 1;
+              }
+            }
+            .more-container {
+              z-index: -100;
+              display: block;
+              width: 175px;
+              height: 175px;
+              border-radius: 100%;
+              position: absolute;
+              background-color: rgba(#1cf09b, 0.83);
+              margin-top: -165px;
+              margin-left: -5000px;
+              overflow: hidden;
+              h1 {
+                margin-top: 65px;
+                font-size: 26px;
+                color: white;
+              }
+            }
+          }
+          @media all and (max-width: 650px) {
+            .about-container {
+              display: none;
+            }
+          }
+          .about-container {
+            h3 {
+              text-align: center;
+              color: rgb(255, 238, 1);
+            }
+            .about-text {
+              line-height: 2.0;
+            }
+          }
+        }
+        @media all and (max-width: 650px) {
+          #how {
+            display: block;
+            margin: 0 auto;
+            height: 250px;
           }
         }
       }

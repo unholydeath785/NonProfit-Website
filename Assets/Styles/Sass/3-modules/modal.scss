@@ -7,21 +7,17 @@
 	position: fixed;
 	display: none;
 	.modal-container {
-		-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-		-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-		box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-		width: 60%;
+		-webkit-box-shadow: 0px 15px 5px 10px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 15px 5px 10px rgba(0,0,0,0.75);
+		box-shadow: 0px 15px 5px 10px rgba(0,0,0,0.75);
+		width: 0;
 		height: 60%;
-		background-color:rgb(255, 255, 255);
+		background-color:rgb(119, 119, 119);
 		margin: 10% auto;
-		border-radius: 10px;
 		.modal-header {
-			border-top-left-radius: 10px;
-			border-top-right-radius:  10px;
+			background-color: rgb(150, 150, 150);
 			width: 99.9%;
 			height: 14.9%;
-			border: 1px solid rgb(73, 73, 73);
-			border-bottom: none;
 			.modal-title {
 				margin: 0;
 				padding: 0;
@@ -32,20 +28,18 @@
 		.modal-body {
 			width: 99.9%;
 			height: 70%;
-			border: 1px solid rgb(73, 73, 73);
 			.modal-desc {
+				overflow-y: scroll;
 				margin-left: 50px;
 				word-wrap: normal;
 				line-height: 2.0;
+				max-height: 90%;
 			}
 		}
 		.modal-footer {
+			background-color: rgb(150, 150, 150);
 			width: 99.9%;
 			height: 14.5%;
-			border-bottom-left-radius: 10px;
-			border-bottom-right-radius:  10px;
-			border: 1px solid rgb(73, 73, 73);
-			border-top: none;
 			.modal-close {
 				background-color: rgb(221, 39, 39);
 				border: none;
@@ -61,7 +55,6 @@
 					cursor: pointer;
 				}
 				&:focus {
-					border: 1px solid black;
 					outline: none;
 				}
 			}

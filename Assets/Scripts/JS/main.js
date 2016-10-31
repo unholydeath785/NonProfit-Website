@@ -49,13 +49,13 @@ var app = (function ($) {
   })
 
   $('.event-cover').hover(function () {
-    
+
   })
 
 $('.how').click(function () {
-  $('.modal-overlay').slideDown(500);
+  $('.modal-overlay').show(1);
   setTimeout(function () {
-    $('.modal-container').slideDown(500);
+    slideRight($('.modal-container'),'80%')
   }, 250);
   $('.modal-title').text($(this).data("title"));
   var index;
@@ -76,8 +76,10 @@ $('.how').click(function () {
 })
 
 $('.modal-close').click(function () {
-  $('.modal-overlay').slideUp();
-  $('.modal-container').slideUp();
+  slideLeft($('.modal-container'), '0');
+  setTimeout(function () {
+    $('.modal-overlay').hide(1);
+  }, 1000);
 })
 
   //functions
@@ -151,7 +153,12 @@ $('.modal-close').click(function () {
 
 })(jQuery);
 
+// var ready = false;
+// while(!ready) {
+//   app.loader();
+// }
 $(document).ready(function () {
+  ready = true;
   app.init();
   smoothScool(1000);
 })

@@ -1,21 +1,19 @@
 .projects {
-	padding-top:35px;
 	height: auto;
 	width: 100%;
 	background: white;
 	position: relative;
 	.project-title {
 		font-size: 48px;
-		text-decoration: underline;
-		color:white;
 		text-rendering: geometricPrecision;
+		text-decoration: underline;
+		color: rgb(255, 238, 1);
 		text-align: center;
 		background-color: rgb(179, 179, 179);
 		border-top: 5px solid rgb(124, 124, 124);
 		border-bottom: 5px solid rgb(124, 124, 124);
-		padding-top: 15px;
 		padding-bottom: 15px;
-		text-shadow: 4px 3px #19CF86;
+		text-shadow: 2px 1px rgb(145, 136, 3);
 		&:hover {
 			cursor:default;
 		}
@@ -45,7 +43,7 @@
 			background-attachment: fixed;
 			.slide-title {
 				padding-bottom: 25px;
-				color:#1cf09b;
+				color: rgb(245, 235, 92);
 				text-decoration: underline;
 				text-align: center;
 				font-size: 40px;
@@ -60,12 +58,24 @@
 				height: 250px;
 			}
 			.project-desc {
+				color: #48b98c;
 				padding-top:50px;
-				margin: 25px 10%;
+				margin: 200px 10%;
 				line-height: 2;
-				font-size: 18px;
-				font-weight: 200;
+				font-size: 36px;
 				text-align: center;
+				border-bottom: none;
+				font-weight: 800;
+				&:hover {
+					transition: border 0.12s ease-in-out, transform 0.12s ease-in-out;
+					cursor: pointer;
+					border-bottom: 3px solid #1cf09b;
+					transform: scale(1.1);
+				}
+				a {
+					text-decoration: none;
+					color: inherit;
+				}
 			}
 		}
 	}
