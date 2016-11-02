@@ -2,7 +2,7 @@
 	height: auto;
 	width: 100%;
 	background: white;
-	position: relative;
+	margin-top: -200px;
 	.project-title {
 		font-size: 48px;
 		text-rendering: geometricPrecision;
@@ -23,15 +23,15 @@
 		height: 500px;
 		#slide-1 {
 			color:black;
-			background-image: url("../../Images/db.jpg");
+			background-image: url("../../Images/myhub.jpg");
 		}
 		#slide-2 {
 			color:black;
-			background-image: url("../../Images/bg.png");
+			background-image: url("../../Images/admin-panel.png");
 		}
 		#slide-3 {
 			color:black;
-			background-image: url("../../Images/myhub.jpg");
+			background-image: url("../../Images/first-site.png");
 		}
 		.slide {
 			display: none;
@@ -40,7 +40,13 @@
 			background-color: rgb(222, 222, 222);
 			width:100%;
 			background-size: cover;
-			background-attachment: fixed;
+			-webkit-filter: blur(2px);
+			filter: blur(2px);
+			&:hover {
+				transition: filter 0.75s ease-in-out;
+				-webkit-filter: blur(0px);
+				filter: blur(0px);
+			}
 			.slide-title {
 				padding-bottom: 25px;
 				color: rgb(245, 235, 92);
@@ -66,10 +72,11 @@
 				text-align: center;
 				border-bottom: none;
 				font-weight: 800;
+				border-bottom: 1px solid #1cf09b;
 				&:hover {
 					transition: border 0.12s ease-in-out, transform 0.12s ease-in-out;
 					cursor: pointer;
-					border-bottom: 3px solid #1cf09b;
+					border-bottom: 5px solid #1cf09b;
 					transform: scale(1.1);
 				}
 				a {

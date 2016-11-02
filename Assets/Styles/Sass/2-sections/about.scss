@@ -178,14 +178,13 @@
           color: rgb(255, 238, 1);
         }
         margin: 0 auto;
-        #how {
+        .col-2 {
           display: block;
           margin: 0 auto;
           height: 500px;
           .logo-container {
             z-index: 1;
             margin: 0 auto;
-            margin-left: 15px;
             width: 205px;
             height: 205px;
             background-color: rgb(66, 62, 71);
@@ -228,21 +227,25 @@
               display: none;
             }
           }
+          h3 {
+            text-align: center;
+            color: rgb(255, 238, 1);
+          }
           .about-container {
-            h3 {
-              text-align: center;
-              color: rgb(255, 238, 1);
-            }
+
             .about-text {
               line-height: 2.0;
             }
           }
         }
         @media all and (max-width: 650px) {
-          #how {
+          .col-2 {
             display: block;
             margin: 0 auto;
             height: 250px;
+          }
+          #how-2, #how-3 {
+            display: none;
           }
         }
       }

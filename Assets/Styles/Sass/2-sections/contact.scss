@@ -172,6 +172,9 @@
 						width: 35px;
 						height: 35px;
 						cursor: pointer;
+						&:hover {
+							border: 2px solid #19CF86;
+						}
 						@media all and (max-width: 260px) {
 							width: 25px;
 							height: 25px;
@@ -198,6 +201,9 @@
 						padding: 10px 7px;
 						background-color: rgb(94, 93, 93);
 						color:white;
+						&:hover {
+							border-bottom: 1px solid black;
+						}
 						&:focus {
 							transition: 0.15s border ease-in-out;
 							border-bottom: 5px solid #19CF86;
@@ -218,6 +224,9 @@
 						width: 100%;
 						height: 65%;
 						border: 1px solid white;
+						&:hover {
+							border: 1px solid #19CF86;
+						}
 						&:focus {
 							transition: 0.15s border ease-in-out;
 							border: 5px solid #19CF86;

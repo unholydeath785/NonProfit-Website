@@ -144,6 +144,7 @@ html, body {
     list-style: none;
     width: 50%; }
     .header .menu .menu-icon {
+      opacity: 0.5;
       left: 85%;
       position: fixed;
       z-index: 420666;
@@ -157,8 +158,9 @@ html, body {
       margin-top: 25px;
       border-radius: 4px; }
       .header .menu .menu-icon:hover {
-        transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out, color 0.5s ease-in-out;
-        background-color: rgba(28, 240, 155, 0.61);
+        transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out, color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 1;
+        background-color: #1cf09b;
         transform: scale(1.05);
         cursor: pointer; }
       .header .menu .menu-icon img {
@@ -198,6 +200,7 @@ html, body {
             margin-left: 15px;
             text-align: center;
             display: inline-block;
+            width: auto;
             border: 5px solid #06e6fc;
             padding: 5px 10px; }
       .header .jumbotron .opacity-overlay .kicker {
@@ -378,31 +381,30 @@ html, body {
       text-align: center;
       text-decoration: underline;
       color: #ffee01; }
-    .about .grid-container .row #how-container #how {
+    .about .grid-container .row #how-container .col-2 {
       display: block;
       margin: 0 auto;
       height: 500px; }
-      .about .grid-container .row #how-container #how .logo-container {
+      .about .grid-container .row #how-container .col-2 .logo-container {
         z-index: 1;
         margin: 0 auto;
-        margin-left: 15px;
         width: 205px;
         height: 205px;
         background-color: #423e47;
         border-radius: 100%; }
-        .about .grid-container .row #how-container #how .logo-container img {
+        .about .grid-container .row #how-container .col-2 .logo-container img {
           padding-top: 30px;
           display: block;
           margin: 0 auto;
           height: 150px;
           width: 150px; }
-        .about .grid-container .row #how-container #how .logo-container:hover {
+        .about .grid-container .row #how-container .col-2 .logo-container:hover {
           cursor: pointer; }
-          .about .grid-container .row #how-container #how .logo-container:hover .more-container {
+          .about .grid-container .row #how-container .col-2 .logo-container:hover .more-container {
             transition: margin-left 0.75s ease-in-out, z-index 0.15s ease-in-out;
             margin-left: 15px;
             z-index: 1; }
-        .about .grid-container .row #how-container #how .logo-container .more-container {
+        .about .grid-container .row #how-container .col-2 .logo-container .more-container {
           z-index: -100;
           display: block;
           width: 175px;
@@ -413,29 +415,31 @@ html, body {
           margin-top: -165px;
           margin-left: -5000px;
           overflow: hidden; }
-          .about .grid-container .row #how-container #how .logo-container .more-container h1 {
+          .about .grid-container .row #how-container .col-2 .logo-container .more-container h1 {
             margin-top: 65px;
             font-size: 26px;
             color: white; }
       @media all and (max-width: 650px) {
-        .about .grid-container .row #how-container #how .about-container {
+        .about .grid-container .row #how-container .col-2 .about-container {
           display: none; } }
-      .about .grid-container .row #how-container #how .about-container h3 {
+      .about .grid-container .row #how-container .col-2 h3 {
         text-align: center;
         color: #ffee01; }
-      .about .grid-container .row #how-container #how .about-container .about-text {
+      .about .grid-container .row #how-container .col-2 .about-container .about-text {
         line-height: 2.0; }
     @media all and (max-width: 650px) {
-      .about .grid-container .row #how-container #how {
+      .about .grid-container .row #how-container .col-2 {
         display: block;
         margin: 0 auto;
-        height: 250px; } }
+        height: 250px; }
+      .about .grid-container .row #how-container #how-2, .about .grid-container .row #how-container #how-3 {
+        display: none; } }
 
 .projects {
   height: auto;
   width: 100%;
   background: white;
-  position: relative; }
+  margin-top: -200px; }
   .projects .project-title {
     font-size: 48px;
     text-rendering: geometricPrecision;
@@ -454,13 +458,13 @@ html, body {
     height: 500px; }
     .projects .projects-carousel #slide-1 {
       color: black;
-      background-image: url("../../Images/db.jpg"); }
+      background-image: url("../../Images/myhub.jpg"); }
     .projects .projects-carousel #slide-2 {
       color: black;
-      background-image: url("../../Images/bg.png"); }
+      background-image: url("../../Images/admin-panel.png"); }
     .projects .projects-carousel #slide-3 {
       color: black;
-      background-image: url("../../Images/myhub.jpg"); }
+      background-image: url("../../Images/first-site.png"); }
     .projects .projects-carousel .slide {
       display: none;
       margin-top: -40px;
@@ -468,7 +472,12 @@ html, body {
       background-color: #dedede;
       width: 100%;
       background-size: cover;
-      background-attachment: fixed; }
+      -webkit-filter: blur(2px);
+      filter: blur(2px); }
+      .projects .projects-carousel .slide:hover {
+        transition: filter 0.75s ease-in-out;
+        -webkit-filter: blur(0px);
+        filter: blur(0px); }
       .projects .projects-carousel .slide .slide-title {
         padding-bottom: 25px;
         color: #f5eb5c;
@@ -491,11 +500,12 @@ html, body {
         font-size: 36px;
         text-align: center;
         border-bottom: none;
-        font-weight: 800; }
+        font-weight: 800;
+        border-bottom: 1px solid #1cf09b; }
         .projects .projects-carousel .slide .project-desc:hover {
           transition: border 0.12s ease-in-out, transform 0.12s ease-in-out;
           cursor: pointer;
-          border-bottom: 3px solid #1cf09b;
+          border-bottom: 5px solid #1cf09b;
           transform: scale(1.1); }
         .projects .projects-carousel .slide .project-desc a {
           text-decoration: none;
@@ -681,6 +691,8 @@ html, body {
           width: 35px;
           height: 35px;
           cursor: pointer; }
+          .contact .media-container .media-fluid .media-list .media img:hover {
+            border: 2px solid #19CF86; }
           @media all and (max-width: 260px) {
             .contact .media-container .media-fluid .media-list .media img {
               width: 25px;
@@ -701,6 +713,8 @@ html, body {
           padding: 10px 7px;
           background-color: #5e5d5d;
           color: white; }
+          .contact .media-container .email .email-container .email-header input:hover {
+            border-bottom: 1px solid black; }
           .contact .media-container .email .email-container .email-header input:focus {
             transition: 0.15s border ease-in-out;
             border-bottom: 5px solid #19CF86;
@@ -717,6 +731,8 @@ html, body {
         width: 100%;
         height: 65%;
         border: 1px solid white; }
+        .contact .media-container .email .email-container .email-body textarea:hover {
+          border: 1px solid #19CF86; }
         .contact .media-container .email .email-container .email-body textarea:focus {
           transition: 0.15s border ease-in-out;
           border: 5px solid #19CF86;

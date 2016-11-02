@@ -4,6 +4,7 @@
     list-style: none;
     width: 50%;
     .menu-icon {
+      opacity: 0.5;
       left:85%;
       position: fixed;
       z-index:420666;
@@ -17,8 +18,9 @@
       margin-top: 25px;
       border-radius: 4px;
       &:hover {
-        transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out, color 0.5s ease-in-out;
-        background-color: rgba(#1cf09b, 0.61);
+        transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out, color 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 1;
+        background-color: #1cf09b;
         transform: scale(1.05);
         cursor: pointer;
       }
@@ -29,7 +31,7 @@
       @media all and (max-width: 480px) {
         display: none;
       }
-      
+
     }
   }
   .jumbotron {
@@ -63,6 +65,7 @@
             margin-left:15px;
             text-align: center;
             display: inline-block;
+            width: auto;
             border: 5px solid rgb(6, 230, 252);
             padding: 5px 10px;
           }
