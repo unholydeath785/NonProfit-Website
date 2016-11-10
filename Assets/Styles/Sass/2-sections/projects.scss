@@ -42,7 +42,7 @@
 			background-size: cover;
 			-webkit-filter: blur(2px);
 			filter: blur(2px);
-			&:hover {
+			&:hover, &:focus {
 				transition: filter 0.75s ease-in-out;
 				-webkit-filter: blur(0px);
 				filter: blur(0px);
